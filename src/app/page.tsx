@@ -1,5 +1,11 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <div>Hello World!</div>
+    <div>
+      <Link href='/'>Home</Link>
+      <Link href='/sign-in'>Sign In</Link>
+      <h1>Home</h1>
+    </div>
   );
-}
+};
