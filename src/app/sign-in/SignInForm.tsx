@@ -71,7 +71,7 @@ export default function SignInForm() {
                     <span>Enter your password. <span className='text-green-500'>✔️</span></span>
                 }
             </div>
-            {errors.usernameError || errors.passwordError ? 
+            {Object.values(errors).some(error => error) ?
             <button className='border-black border-2 bg-gray-300' type='submit' disabled={true}>
                 Submit
             </button>
